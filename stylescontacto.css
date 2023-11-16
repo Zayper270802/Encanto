@@ -1,0 +1,140 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #98b5c3;
+}
+
+form {
+    width: 600px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #4b7fc8;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #2e517a;
+}
+
+h1 {
+    font-size: 40px;
+    color: #181713;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+}
+
+.footer {
+    padding: 30px;
+}
+
+.footer-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.submenu ul li {
+    margin-bottom: 8px;
+}
+
+.submenu:hover ul {
+    display: block;
+}
+
+
+.menu-icono {
+    cursor: pointer;
+    display: initial;
+}
+
+.menu-icono img {
+    width: 25px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .navbar {
+    display: flex;
+}
+
+.navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #303030;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 15px;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+}

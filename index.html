@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encanto ✨</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Encanto ✨</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="usuario.html">Registro</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.png" id="img-carrito" alt="carrito 🛒"><p>carrito 🛒</p>
+                   <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="btn-2">vaciar Carrito</a>
+                    <a href="carritodecompras.html" id="comprar" class="btn-2">Comprar</a>
+                   </div>
+            
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+      
+        <div class="header-content container">
+
+            <div class="header-txt">
+        <p>
+
+        </p>
+        <p>
+
+        </p>
+        <p>
+
+        </p>
+        <p>
+            
+        </p>
+                <h1>Encanto ✨</h1>
+                <p>
+
+                </p>
+                <h2>"Te mereces Belleza, mereces Joya, mereces Encanto!"
+                    Diseñamos joyas con cuidado y amor</h2>
+                    <p>
+
+                    </p>
+                <a href="nosotros.html" class="btn-1">Información</a>
+            </div>
+            <div class="header-img">
+                <img src="images/giphy (2).gif">
+            </div>
+        </div>
+    </header>
+    
+    <section class="information container">
+        <div class="information-content" id="slick-slider">
+            <div class="information-1">
+                <img src="images/blog.jpg" alt="">
+                <h3>Mantenimiento de por vida</h3>
+                <p>Todos nuestros productos cuentan con un documento que certifica la calidad de estos</p>
+            </div>
+    
+            <div class="information-1">
+                <img src="images/vista-superior-bodegones-cadenas-oro_23-2149560625.jpg" alt="">
+                <h3>30 días de prueba</h3>
+                <p>Pruebalo 30 días y si no quedas satisfecho te devolvemos tu dinero</p>
+            </div>
+    
+            <div class="information-1">
+                <img src="images/vista-elegantes-lujosos-recursos-papeleria-planificador-bodas_23-2150166796.jpg" alt="">
+                <h3>Innovación y diseño</h3>
+                <p>Nuestro equipo de diseñadores y artesanos trabaj unidos combinando elcorazón y la mente para lograr el equilibrio ideal de cada joya</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        $(document).ready(function(){
+            $('#slick-slider').slick({
+                slidesToShow: 1, 
+                slidesToScroll: 1, 
+                autoplay: true, 
+                autoplaySpeed: 300 
+            });
+        });
+    </script>
+    
+
+    <section class="oferts container">
+        <div class="ofert-1">
+            <img src="images/bg2.jpg" alt="">
+            <h3>Oferta</h3>
+            <p>Premium</p>
+        </div>
+        <div class="ofert-1">
+            <img src="images/blog1.jpg" alt="">
+            <h3>Oferta</h3>
+            <p>Aretes</p>
+        </div>
+        <div class="ofert-1">
+            <img src="images/b43.jpg" alt="">
+            <h3>Oferta</h3>
+            <p>Anillos</p>
+        </div>
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2>Productos destacados</h2>
+
+        
+            <div class="product-container">
+                <div class="product">
+                    <img src="images/jo1.jpeg">
+                    <div class="product-txt">
+                        <h3>Cadenas love</h3>
+                        <p class="precio">$9000.00</p>
+                        <a href="#" class="agregar-carrito btn2" data-id="1">Agregar</a>
+                    </div>
+                </div> 
+                    <div class="product-container">
+                        <div class="product">
+                            <img src="images/jo2.jpeg">
+                            <div class="product-txt">
+                                <h3>Cadena y aretes</h3>
+                                <p class="precio">$15000.00</p>
+                                <a href="#" class="agregar-carrito btn2" data-id="1">Agregar</a>
+                            </div>
+                        </div>
+                            <div class="product-container">
+                                <div class="product">
+                                    <img src="images/jo3.jpeg">
+                                    <div class="product-txt">
+                                        <h3>Cadena sol</h3>
+                                        <p class="precio">$3600.00</p>
+                                        <a href="#" class="agregar-carrito btn2" data-id="1">Agregar</a>
+                                    </div>
+                                </div>
+                                    <div class="product-container">
+                                        <div class="product">
+                                            <img src="images/jo4.jpeg">
+                                            <div class="product-txt">
+                                                <h3>Cadena Mariposa</h3>
+                                                <p class="precio">$8900.00</p>
+                                                <a href="#" class="agregar-carrito btn2" data-id="1">Agregar</a>
+                                            </div>
+                                        </div>
+                                            <div class="product-container">
+                                                <div class="product">
+                                                    <img src="images/jo5.jpeg">
+                                                    <div class="product-txt">
+                                                        <h3>Anillo de bodas</h3>
+                                                        <p class="precio">$12030.00</p>
+                                                        <a href="#" class="agregar-carrito btn2" data-id="1">Agregar</a>
+                                                    </div>
+                                                </div>
+                                                    <div class="product-container">
+                                                        <div class="product">
+                                                            <img src="images/jo6.jpeg">
+                                                            <div class="product-txt">
+                                                                <h3>Cadenas de 10k</h3>
+                                                                <p class="precio">$15000</p>
+                                                                <a href="#" class="agregar-carrito btn2" data-id="1">Agregar</a>
+                                                            </div>
+                                                        </div>
+        </div>
+    
+    
+    </main>
+
+    <section class="service">
+        <div class="service-1">
+            <img class="store" src="images/i1.jpeg" alt="">
+        </div>
+        <div class="service-2">
+            <img class="store" src="images/i2.jpeg" alt="">
+        </div>
+        <div class="service-3">
+            <img class="store" src="images/i3.jpeg" alt="">
+        </div>               
+    </section>
+    <section class="contact container">
+        <form>
+            <input type="email" placeholder="Correo">
+            <input type="submit" class="btn-3">
+        </form>
+    </section>
+
+<footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <ul>
+                <h3>©2023 ZAY PER</h3>
+               
+            </ul>
+        </div>
+        
+        <div class="link">
+            <ul>
+                <h3>Derechos Reservados® </h3>
+                
+            </ul>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+     <div id="bienvenidaModal" class="modal">
+        <div class="modal-content">
+            <span id="cerrarBienvenida" class="close">&times;</span>
+            <h2>Bienvenid@ a Encanto ✨</h2>
+            <p>Gracias por visitar nuestra tienda en línea. Esperamos que encuentres las joyas perfectas para ti.</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
